@@ -3,125 +3,166 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jerwayne Nieva | Gamer • Leader • Creator</title>
+  <title>Jerwayne Nieva | From Vision to Reality</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: black;
-      color: white;
       margin: 0;
       padding: 0;
+      background: #000;
+      color: white;
       text-align: center;
     }
+
     header {
       background: #111;
-      border-bottom: 3px solid yellow;
       padding: 25px;
+      border-bottom: 3px solid yellow;
     }
-    header h1 { color: white; margin: 0; }
-    header p { color: pink; margin: 5px 0; }
-    nav a {
-      color: yellow;
-      text-decoration: none;
-      margin: 10px;
-      font-weight: bold;
+
+    h1 {
+      color: white;
+      font-size: 2.2em;
+      margin: 0;
     }
-    nav a:hover { color: white; }
-    section { padding: 40px 20px; max-width: 900px; margin: auto; }
-    h2 { color: yellow; }
+
+    p.subtitle {
+      color: pink;
+      margin: 5px 0 0;
+      font-size: 1.1em;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    img {
+      border-radius: 10px;
+      border: 2px solid pink;
+    }
+
     .cards {
       display: flex;
-      justify-content: center;
       flex-wrap: wrap;
+      justify-content: center;
       gap: 25px;
       margin-top: 20px;
     }
+
     .card {
-      background: #1a1a1a;
-      padding: 15px;
+      background: #111;
+      border: 1px solid #333;
       border-radius: 10px;
+      padding: 15px;
       width: 250px;
-      border: 2px solid yellow;
-      box-shadow: 0 0 15px rgba(255,255,0,0.2);
+      box-shadow: 0 0 10px rgba(255, 255, 0, 0.2);
+      transition: transform 0.2s ease-in-out;
     }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
     .card img {
       width: 100%;
-      border-radius: 10px;
-      border: 2px solid pink;
       height: 150px;
       object-fit: cover;
+      border-radius: 10px;
+      border: 2px solid pink;
     }
+
     footer {
       background: #111;
-      border-top: 3px solid yellow;
-      padding: 20px;
       color: pink;
+      padding: 15px;
+      font-size: 14px;
+      border-top: 3px solid yellow;
+      margin-top: 30px;
     }
-    a { color: yellow; }
+
+    a {
+      color: yellow;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
 
-<header>
-  <h1>Jerwayne Nieva</h1>
-  <p>From Vision to Reality — Gamer • Leader • Creator</p>
-  <nav>
-    <a href="#about">About</a>
-    <a href="#hobbies">Hobbies</a>
-    <a href="#profession">Profession</a>
-    <a href="#life">My Life</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
+  <header>
+    <h1>Jerwayne Nieva</h1>
+    <p class="subtitle">From Vision to Reality — Gamer • Leader • Creator</p>
+  </header>
 
-<section id="about">
-  <img src="profile.jpg" alt="Jerwayne Profile" width="200" style="border-radius:100px; border:3px solid pink;">
-  <h2>About Me</h2>
-  <p>I'm <strong>Jerwayne Maaghop Nieva</strong>, 20 years old, a passionate male with strong leadership, strategic thinking, and creativity. I believe success comes from hard work, discipline, and continuous learning.</p>
-</section>
+  <!-- About Section -->
+  <section id="about">
+    <img src="profile.jpg" alt="Jerwayne Nieva" width="200">
+    <h2>About Me</h2>
+    <p><strong>Age:</strong> 20 years old</p>
+    <p>
+      I am a hardworking and strategic individual with strong leadership and creativity.
+      My goal is to grow personally and professionally while making a positive impact through passion and dedication.
+    </p>
+  </section>
 
-<section id="hobbies" style="background:#111;">
-  <h2>My Hobbies 🎮🔥</h2>
-  <div class="cards">
-    <div class="card">
-      <img src="games.jpg" alt="Games">
-      <h3>Strategy Games</h3>
-      <p>I love playing competitive games that test my strategy and leadership.</p>
+  <!-- Hobbies Section -->
+  <section id="hobbies">
+    <h2>My Hobbies</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="games.jpg" alt="Strategy Games">
+        <h3>Strategy & Competitive Games</h3>
+        <p>I love competitive and strategic games that challenge my thinking and decision-making.</p>
+      </div>
+      <div class="card">
+        <img src="movies.jpg" alt="Movies">
+        <h3>Watching Movies</h3>
+        <p>Movies inspire me with creativity and provide relaxation after a long day.</p>
+      </div>
+      <div class="card">
+        <img src="cooking.jpg" alt="Cooking">
+        <h3>Cooking</h3>
+        <p>Cooking allows me to explore creativity and share good food with people I care about.</p>
+      </div>
     </div>
-    <div class="card">
-      <img src="movies.jpg" alt="Movies">
-      <h3>Movies</h3>
-      <p>Watching movies gives me inspiration and creativity for life.</p>
+  </section>
+
+  <!-- Profession Section -->
+  <section id="profession">
+    <h2>My Profession</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="profession.jpg" alt="Profession">
+        <h3>Leader & Creator</h3>
+        <p>I aim to become a professional who inspires others through teamwork, strategy, and creative ideas.</p>
+      </div>
     </div>
-    <div class="card">
-      <img src="cooking.jpg" alt="Cooking">
-      <h3>Cooking</h3>
-      <p>Cooking is my way of relaxing and exploring new flavors.</p>
+  </section>
+
+  <!-- Life Section -->
+  <section id="life">
+    <h2>My Life</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="life.jpg" alt="My Life">
+        <h3>My Journey</h3>
+        <p>Life is a mission — to grow, lead, and stay true to my goals while never giving up on my dreams.</p>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="profession">
-  <h2>My Profession 🏆</h2>
-  <img src="profession.jpg" alt="Profession" width="500" style="border-radius:10px; border:2px solid pink;">
-  <p>I aim to become a leader who inspires others through creativity, innovation, and dedication to success.</p>
-</section>
-
-<section id="life" style="background:#111;">
-  <h2>My Life 🌟</h2>
-  <img src="life.jpg" alt="My Life" width="500" style="border-radius:10px; border:2px solid pink;">
-  <p>"Success doesn’t come from what you do occasionally — it comes from what you do consistently."</p>
-</section>
-
-<section id="contact">
-  <h2>Contact Me 📩</h2>
-  <p>Email: <a href="mailto:nievajoewayne1@gmail.com">nievajoewayne1@gmail.com</a></p>
-  <p>Facebook: <a href="https://www.facebook.com/share/1JSaZ2VAjH/" target="_blank">Visit My Profile</a></p>
-</section>
-
-<footer>
-  <p>© 2025 Jerwayne Nieva | All Rights Reserved</p>
-</footer>
+  <footer>
+    <p>Contact me: 
+      <a href="mailto:nievajoewayne1@gmail.com">nievajoewayne1@gmail.com</a> |
+      <a href="https://www.facebook.com/share/1JSaZ2VAjH/" target="_blank">Facebook</a>
+    </p>
+  </footer>
 
 </body>
 </html>
+
